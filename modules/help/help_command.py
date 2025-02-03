@@ -21,7 +21,12 @@ class HelpCommand(commands.MinimalHelpCommand):
         embed = discord_utils.create_embed()
         embed.title = "Bot Commands"
         embed.set_author(
-            name=self.context.bot.user.name, icon_url=self.context.bot.user.avatar
+            name=self.context.bot.user.name,
+            icon_url=(
+                self.context.bot.user.avatar.url
+                if self.context.bot.user.avatar
+                else None
+            ),
         )
         description = self.context.bot.description
         if description:

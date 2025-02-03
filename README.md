@@ -31,7 +31,7 @@ Bot-Be-Named is currently set up with our own configurations and environment var
 
 ### Prerequisites - 
 
-- [python3.10 or newer](https://realpython.com/installing-python/)
+- [python3.12 or newer](https://realpython.com/installing-python/)
 
 - [Git](https://github.com/git-guides/install-git)
 
@@ -55,7 +55,7 @@ We recommend using [virtual environments](https://docs.python.org/3/tutorial/ven
 git clone https://github.com/kevslinger/bot-be-named.git
 cd bot-be-named
 #Technically optional, but using virtualenv is usually a good idea
-virtualenv venv -p=3.10 
+virtualenv venv -p=3.12 
 source venv/bin/activate
 #This installs all the python dependancies the bot needs
 pip install -r requirements.txt && pre-commit install
